@@ -1,0 +1,73 @@
+
+    Las variabeles sirven para almacenar datos que posteriormente serán utilizados en funciones. Existen tres formas de crear una variable en JS
+    - var : esta es la manera mas utilizada, y es utilizada desde la versión de JS ES5.
+    - let : es una nueva manera de crear una variable, la cual fue incorporada con la versión ES6 de JS. Será utilizada posteriormente cuando se requiera un "nivel scope"
+    - const : es tambien una nueva forma de variable incluida con la versión ES6 de JS. La diferencia es que esta tipo de variable no se modifica.
+
+    Así mismo, los datos que se pueden almacenar en las varibales, se clasifican de la siguiente manera de acuerdo a sus atributos:
+    - strinsgs : son bloques o cadenas de texto que son escritras entre comillas.
+    - numbers : son números, se pueden escribir números negativos tambien y no se requieren comillas
+    - booleanos : Son tomados como referencia del sistema binario, es decir que existen unicamente dos opciones, y se aplican en este lenguaje en la versión "true" y "false"
+
+    De igual forma, tambien existen los operadores, que se pueden considerar como funciones integradas en este lenguaje. Estos operados incluyen sumas (+), restas (-), 
+    multipicaciones (*) y divisiones (/). Estos operadores tienen un orden de precedencia y asociatividad. La presedencia se refiere al orden en el que se deben de realizar las operaciones
+    dependiendo de su nivel jerarquico asignado. La asociatividad se refiere al orden en que son realizadas operaciones que tienen el mismo nivel jerarquico, es decir en dirección de
+    derecha a izquierda o de izquierda a derecha.
+
+    Cabe mencionar, que dentro de JS estan integrados varios objetos y los métodos que se ejecutan de manera conjunta. Algunos de ellos son:
+
+    console.log() : utilizado para imprimir en la consola todo lo que se encuentra dentro del paréntesis.
+    math.pow() : utilizado para elevar una cantidad a un número exponencial.
+    math.round() : utilizado para redondear un número con decimales a un número entero.
+    math.floor() : utilizado para redondear un numero en decremento  sin tomar en consideración el criterio de decimales para el redondeo.
+    math.ciel(): utilizado para redondear un número en incremento sin tomar en consideración el criterio de decimales para el redondeo.
+
+    Existen tres formas de escribir funciones, las cuales se muestran a continuación:
+    1. function nombreDeFuncion () {}
+    2. var nombreDeFuncion = function () {}
+    3. var nombreDeFuncion = () => {}
+
+    De esta manera se puede esribir una función utilizando la primer forma:
+
+    function logHola() {
+        console.log("Hola !");
+    } 
+    logHola()
+
+
+    Ahora podemos agregararle argumentos a esta función. esto se realiza agregandole una variable entre los parentesis de la función. Así mismo esto nos permite usar la variable dentro
+    de la función. Y cuando se hace el llamado de la función se escribe el nomnbre a utilizar, como se muestra a continuación:
+
+    function logHola(nombre) {
+        console.log("Hola "+ nombre);
+        }
+    function logHola(Marcos);
+
+    Ahora veamos un ejemplo para una variable utilizando atributos numericos, agregando argumentos
+
+    function sumaDeDosNumeros(a,b) {
+        var suma = a + b;
+        return suma;
+    }
+    function sumaDeDosNumeros(4,5); // 9
+
+    Aqui podemos ver que se utiliza la declaración Retunr. La cual es la única declaración usada para regresar información de una función.
+
+Por último, veremos un ejemplo utilizando la condición de if, y los atributos booleanos de true y false, mediante la siguiente función.
+
+    function aptoParaManejar(edad) {
+        if (edad>18) {
+            return true;
+        }
+            return false;
+    }
+
+
+    
+Temas cubiertos en resumen:
+
+Variables. Favor de ver línea 2 a la 5.
+Strings. Favor de ver línea 8.
+Funciones (argumentos, return) Favor de ver líneas de 25 a 54.
+Declaraciones if. Favor de ver líneas 56 a 63.
+Valores booleanos (true, false)  Favor de ver líneas 56 a 63 y línea 10.
