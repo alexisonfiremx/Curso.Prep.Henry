@@ -1,0 +1,16 @@
+Bucle o ciclo "for"
+El objeto 'for' forma un ciclo en el flujo de información que permanece en repetición hasta que se cumpla una condición.
+la sintaxis de este operador se divide en tres partes, las cuales son: una variable, una condición, y el incremento de la variable.
+
+Operador && (and)
+Este operador lógico sirve para comprobar si la combinación de dos declaraciones son ciertas. Si alguna de las dos declaraciones resulta ser false, entonces el resultado de devuelve el
+operador será "false".
+
+Operador || (OR)
+Sirve para comprobar si alguna de las declaraciones de una combinación resulta ser cierta. Si una resulta ser cierta entonces el resultado que regresara el operador será "true". 
+
+Operador !(Not o lo contrario)
+Este operador devuelve el resultado opuesto de lo que resulte de comprobación de otro operador, es decir si el resultado que se regresa es true, lo que finalmente se regresará es un false.
+Así mismo este operador debe aparecer antes de la declaración donde se encuentra el segundo operador, y es necesario encerrar dentro de parentesis el segundo operador para que primero se 
+realice la comprobación de este, y posteriormente actue el operador Not.
+
