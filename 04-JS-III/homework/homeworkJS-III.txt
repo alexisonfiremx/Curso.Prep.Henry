@@ -1,0 +1,20 @@
+Introducción a Arrays (arreglos o matrices)
+
+Como se habia visto anteriormente, las variables solamente almacenaban un elemento de información, pero a traves de los arrays (matrices o arreglos) se puede contener una variedad
+de elementos dentro de una sola variable. Y estos elementos pueden ser consultados en cualquier comento, cambiando alguno de ellos si es necesario.
+
+Así mismo, se puede usar el método de length para consultar la cantidad de elementos que contiene un array.
+Estas matrices ennumeran los elementos que contienen desde el cero y su consecutivo es en incrementos de +1. Por lo cual si deseas consultar uno de los elementos que se encuentra dentro 
+de la matriz deberas de saber el numero que le corresponde de acuerdo a su posición.
+Una forma dinamica de ver el último elemento de la matriz, es mediante la declaración del nombre del arreglo y agregando -1 al final.
+Adicionalmente existen otro tipo de metodos que se pueden utilizar en los arrays para agregar o eliminar elementos, despues de la creación de la matriz.
+Estos son:
+    Push. Agrega un elemento al final de la matriz, y se tiene que agregar entre parentesis el nombre del nuevo elemento
+    Pop. Elimina el último elemento de la matriz.
+    Unshift. agrega un nuevo elemento al principio de la matriz, escribiendo entre parentesis el nombre del nuevo elemento
+    Shift. Elimina el primer elemento de la matriz
+
+Un dato relevante de los arrays, es que pueden almacenar diferentes tipos de datos, ya que JavaScript no es un lenguaje fuertemente tipado, es decir que una matriz puede contener desde
+cadenas de texto, numeros y datos booleanos.
+
+Los bucles o ciclos se utilizan en combinación con los arrays para desplegar los elementos que contiene el arreglo a traves de las iteraciones que realiza en el ciclo.
