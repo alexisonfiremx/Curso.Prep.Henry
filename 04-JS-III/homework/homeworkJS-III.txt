@@ -17,4 +17,4 @@ Estos son:
 Un dato relevante de los arrays, es que pueden almacenar diferentes tipos de datos, ya que JavaScript no es un lenguaje fuertemente tipado, es decir que una matriz puede contener desde
 cadenas de texto, numeros y datos booleanos.
 
-Los bucles o ciclos se utilizan en combinación con los arrays para desplegar los elementos que contiene el arreglo a traves de las iteraciones que realiza en el ciclo.
+Los bucles o ciclos se utilizan en combinación con los arrays para desplegar los elementos que contiene el arreglo a traves de las iteraciones que realiza.
