@@ -1,0 +1,80 @@
+Introducción a Objetos
+Así como existen las matrices que pueden almacenar varios elementos dentro de una sola variable, tambien existen los objetos que realizan una función similar, con la diferencia que los
+elementos que almacena son sobre el mismo asunto.
+La manera de exoresar un objeto es atraves de los corchetes {}
+
+Así mismo, otra carecteristica importante de los objetos, es que cada propiedad se expresa en pares, como clave-valor. La clave se refiere el nombre de la propiedad, y el valor se refiere
+al valor que se le asignará a esta propiedad.
+
+Ejemplo de objeto creado.
+
+    const user = {
+        usuario: 'Marcos Herrera',
+        contraseña: 'TobimaruShibaInu',
+        Edad: 21,
+        Profesión: 'Fastest man alive',
+        5: 'Five * five',
+        Tegustalaprogramación : true,
+    }
+
+
+Propiedades
+Estas propiedades que son creadas dentro del objeto pueden ser de diferentes tipos, ya sea una cadena de texto, un booleano, numeros, funciones o inclusive otro objeto.
+
+Adicionalmente existe una forma de agregar más propiedades despues de haber creado una funcion. Y se realiza de la siguiente forma:
+
+    const nuevoUsuario = {
+        esNuevo: true
+    }
+
+nuevoUsuario['Nombre'] = 'Alex Turner'
+nuevoUsuario.colorfav = 'Blue'
+
+Y para poder eliminar una propiedad es necesario escribir la siguiente declaración:
+
+    delete nuevoUsuario.colorfav;
+
+Métodos
+Como se mencionó anteriormente uno de los valores que se puede agregar a un elemento de un objeto es una función. A estas funciones que forman parte de un objeto se les denomina como métodos.
+
+    const saludos = {
+        decirHola: function() {
+            console.log('Saludos a todos!');
+        } 
+    }
+
+Bucle for…in
+Al igual que en las matrices, se puede usar el bucle o ciclo "for" para realizar iteraciones y recorrer cada elemento del objeto. Sin embargo, la sintaxis es diferente a la usada
+ en las matrices.
+ A continuación se muestra un ejemplo:
+
+ Para el siguiente objeto
+
+    const user = {
+        usuario: 'Marcos Herrera',
+        contraseña: 'TobimaruShibaInu',
+        Edad: 21,
+        Profesión: 'Fastest man alive',
+        5: 'Five * five',
+        Tegustalaprogramación : true,
+    }
+
+
+Se usa la siguiente expresion:
+
+
+for(let clave in user){
+    console.log(clave); // usuario, contraseña, Edad, Profesión, 5, Tegustalaprogramación
+    console.log(user[clave]) Marcos Herrera, TobimaruShibaInu, 21, Fastest man alive, five, true
+
+
+Notación de puntos vs notación de corchetes
+
+Existen dos formas para acceder a los valores de las propiedades de un objeto.
+La primera es cuando se conoce el nombre de propiedad, y se escribe con puntuación a traves de la siguiente expresión.
+
+    console.log(user.Edad); // 21
+
+La segunda es a traves de corchetes y se utiliza cuando no sabemos el nombre de la propiedad que queremos accesar.
+
+    console.log(user[unaPropiedad])
