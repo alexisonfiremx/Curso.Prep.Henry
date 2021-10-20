@@ -1,0 +1,34 @@
+
+Prototype
+
+Los objetos clase nos permiten crear metodos para su respectivo objeto una sola vez, y dar acceso a estos metodos para otros objetos clase sin la necesidad generar este código nuevamente
+en cada objeto clase que se vaya a crear. A esta función se le llama prototipo. Cada objeto clase tiene una propiedad prototype que se puede establecer en los metodos.
+
+Anteriormente siempre que creabamos un objeto haciamos una declaración para hacerlo.
+Con propotype existe una forma diferente de crear objetos
+
+Object.create
+
+Nos permite crear un objeto a partir de un prototipo especificado.
+
+Ejemplo:
+
+Alumno.prototype = Object.create(Persona.prototype)
+
+
+Object.asign
+
+Nos permite agregar propiedades a un objeto que ya se le hayan pasado parametros.
+
+var obj = {}
+
+Object.assign(obj, {nombre: 'Alex', apellido: 'Herrera'})
+
+console.log(obj.nombre)
+console.log(obj.apellido)
+
+
+Constructors (de clase)
+
+Se le llama constructor a un tipo especial de método de una clase, que se ejecuta automáticamente a la hora de hacer un new de dicha clase.
+Una clase solo puede tener un constructor, y en el caso de que no se especifique un constructor a una clase, tendrá uno vacío de forma implícita.
