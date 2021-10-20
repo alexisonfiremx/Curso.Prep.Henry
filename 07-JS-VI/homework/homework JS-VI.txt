@@ -1,0 +1,53 @@
+Funciones callback
+
+for.Each
+Este método aplica a cada elemento que forma parte de un arreglo la misma función
+
+Ejemplo:
+const autos = ['Mazda', 'Ford', 'Volkswagen', 'Tesla']
+
+autos.forEach(function(elemento, indice){
+    console.log(elemento);
+})
+
+function nombresCars (elemento) {
+    console.log(elemento)
+}
+
+autos.forEach(nombresCars) // Mazda, Ford, Volkswagen, Tesla
+
+Maps
+
+Es un método que aplica una función a cada elemento de un arreglo regresando el resultado 
+en un nuevo arreglo
+
+var numeros = [1, 5, 10, 20, 30]
+var numerosX2 = numeros.map(function(x){
+    return x * 2;
+})
+
+numerosX2 // [2, 4, 10, 20, 40, 60]
+
+
+
+Reduce
+
+Aplica una función reductora a cada elemento de un arreglo regresando un único valor.
+
+/* EJEMPLO 1 */
+
+const nomoros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const suma = nomoros.reduce(function(acc, elemento){
+    return acc + elemento
+})
+
+suma //45
+
+/* EJEMPLO 2 */
+
+const palabras = ['Hola', 'mi', 'nombre', 'es', 'Marcos Alejandro']
+
+const lafrase = palabras.reduce(function(acc, elemento){
+    return  acc + ' ' + elemento;
+}, 'Frase completa:'  )
